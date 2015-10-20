@@ -11,9 +11,9 @@
 *
 */
 
-exports.server = 'localhost';
+exports.server = 'lightningalaxyy66-lightserver2000.rhcloud.com-80.psim.us';
 
-exports.port = 8000;
+exports.port = 80;
 
 exports.serverid = 'localhost';
 
@@ -38,9 +38,9 @@ exports.watchconfig = true;
 * Login Details
 */
 
-exports.nick = '';
+exports.nick = 'Hydrogen Bot';
 
-exports.pass = '';
+exports.pass = 'martina';
 
 exports.autoReloginDelay = 60 * 1000;
 
@@ -114,7 +114,7 @@ exports.pmhelp = ""; //When you pm the bot but don't use a command, it replies y
 * Language configuration
 */
 
-exports.language = 'english';
+exports.language = 'italian';
 
 /*
 * Configuration for console messages
@@ -153,7 +153,7 @@ exports.debug = {
 */
 
 exports.moderation = {
-	modException: '%', // Min rank for not receive moderation
+	modException: '@', // Min rank for not receive moderation
 
 	allowmute: true,
 	disableModNote: false,
@@ -240,18 +240,16 @@ exports.winmsg = ['GG', 'g_g'];
 exports.losemsg = ['gg', 'wp'];
 
 exports.battleMessages = {
-	/* Examples of battle messages:
 	'tier': {
-		'self': [] //Example: ['gl hf', 'Hi, I\'m a Bot', 'gl']
+		'self': ['gl hf', 'Hi, I\'m a Bot', 'gl']
 	},
 	'-crit': {
-		'self': [], //Example: ['lol that hax', 'stop haxing pls']
-		'foe': [] //Example: ['sorry', 'wow sorry for that', 'get critted']
+		'self': ['lol that hax', 'stop haxing pls'],
+		'foe': ['sorry', 'wow sorry for that', 'get critted']
 	},
 	'-miss': {
-		'self': [] //Example: ['wow hax', 'lol #poke you\'re blind']
+		'self': ['wow hax', 'lol #poke you\'re blind']
 	}
-	*/
 };
 
 exports.ladderCheckInterval = 10 * 1000;
