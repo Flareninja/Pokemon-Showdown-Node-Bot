@@ -11,9 +11,9 @@
 *
 */
 
-exports.server = 'lightningalaxyy66-lightserver2000.rhcloud.com-80.psim.us';
+exports.server = 'lightningalaxyy66-lightserver2000.rhcloud.com';
 
-exports.port = 8000;
+exports.port = 80;
 
 exports.serverid = 'galaxy';
 
