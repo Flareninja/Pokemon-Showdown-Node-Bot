@@ -13,7 +13,7 @@
 
 exports.server = 'lightningalaxyy66-lightserver2000.rhcloud.com-80.psim.us';
 
-exports.port = 80;
+exports.port = 8000;
 
 exports.serverid = 'galaxy';
 
@@ -108,7 +108,7 @@ exports.permissionExceptions = {
 
 exports.botguide = "https://github.com/Ecuacion/Pokemon-Showdown-Node-Bot/blob/master/commands/README.md";
 
-exports.pmhelp = ""; //When you pm the bot but don't use a command, it replies you this message. Example: "Hi, I'm a bot. Use .help to view a command guide"
+exports.pmhelp = "Sono un bot :("; //When you pm the bot but don't use a command, it replies you this message. Example: "Hi, I'm a bot. Use .help to view a command guide"
 
 /*
 * Language configuration
