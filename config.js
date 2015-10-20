@@ -15,7 +15,7 @@ exports.server = 'lightningalaxyy66-lightserver2000.rhcloud.com-80.psim.us';
 
 exports.port = 80;
 
-exports.serverid = 'localhost';
+exports.serverid = 'galaxy';
 
 exports.autoReconnectDelay = 10 * 1000;
 exports.connectionTimeout = 2 * 60 * 1000;
