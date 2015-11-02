@@ -14,7 +14,7 @@
 	},
 
 	youtube: {
-		'before': '',
-		'after': 'link di'
+		'before': 'Link di ',
+		'after': ''
 	}
 };

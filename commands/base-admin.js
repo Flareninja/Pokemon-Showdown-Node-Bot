@@ -42,7 +42,7 @@ exports.commands = {
 	joinallrooms: 'joinall',
 	joinrooms: 'joinall',
 	joinall: function (arg, by, room, cmd) {
-		if (!this.isRanked('admin')) return false;
+		if (!this.isRanked('driver')) return false;
 		var target = 'all';
 		arg = toId(arg);
 		if (arg.length || cmd === 'joinrooms') {

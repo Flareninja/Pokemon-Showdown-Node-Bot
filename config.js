@@ -11,9 +11,9 @@
 *
 */
 
-exports.server = 'lightningalaxyy66-lightserver2000.rhcloud.com';
+exports.server = 'gaaaa88-lightserver2000.rhcloud.com';
 
-exports.port = 80;
+exports.port = 8000;
 
 exports.serverid = 'galaxy';
 
@@ -48,7 +48,7 @@ exports.autoReloginDelay = 60 * 1000;
 * Rooms to join
 */
 
-exports.rooms = ['lobby'];
+exports.rooms = 'all';
 /*
 * exports.rooms = 'all'; //For joining all rooms
 * exports.rooms = 'official'; //For joining official rooms
@@ -88,7 +88,7 @@ exports.globalPermissions = {
 * Commands configuration
 */
 
-exports.commandTokens = ['.']; //Array of valid command characters
+exports.commandTokens = ['.', '+', '-']; //Array of valid command characters
 
 exports.defaultPermission = '%';
 
@@ -179,8 +179,8 @@ exports.moderation = {
 		'caps': 1,
 		'stretch': 1,
 		'banwords': 2,
-		'inapwords': 2,
-		'servers': 2,
+		'inapwords': 6,
+		'servers': 6,
 		'youtube': 2,
 		'spoiler': 2
 	},
@@ -211,12 +211,15 @@ exports.moderation = {
 		"warn",
 		"mute",
 		"hourmute",
-		"roomban"
+		"roomban",
+		"lock",
+		"ban"
 	],
 
 	psServersExcepts: {
 		"showdown": 1,
-		"smogtours": 1
+		"smogtours": 1,
+		"galaxy": 1
 	},
 
 	zeroToleranceDefaultLevel: 'h',
@@ -233,11 +236,11 @@ exports.moderation = {
 
 exports.aceptAll = false;
 
-exports.maxBattles = 1;
+exports.maxBattles = 3;
 
-exports.winmsg = ['GG', 'g_g'];
+exports.winmsg = ['GG', 'g_g', 'gg', 'geg'];
 
-exports.losemsg = ['gg', 'wp'];
+exports.losemsg = ['gg', 'wp', 'rip'];
 
 exports.battleMessages = {
 	'tier': {
@@ -248,7 +251,7 @@ exports.battleMessages = {
 		'foe': ['sorry', 'wow sorry for that', 'get critted']
 	},
 	'-miss': {
-		'self': ['wow hax', 'lol #poke you\'re blind']
+		'self': ['wow hax', 'lol #poke you\'re blind', 'never a joy']
 	}
 };
 
@@ -299,7 +302,7 @@ exports.youtube = {
 */
 
 exports.chatLogger = {
-	rooms: [],
+	rooms: ['lobby'],
 	ignore: {'tournament': ['update', 'updateEnd'], 'formats': true, 'challstr': true, 'updateuser': true, 'queryresponse': true},
 	logIntroMessages: true,
 	ageOfLogs: 7 //in days (max age of logs, 0 to keep logs infinitely)

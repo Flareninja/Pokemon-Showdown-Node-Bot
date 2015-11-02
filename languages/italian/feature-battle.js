@@ -83,6 +83,6 @@
 	},
 
 	battle: {
-		'battlefound': 'Battaglia trovato in ladder'
+		'battlefound': 'Battaglia trovata in ladder'
 	}
 };
