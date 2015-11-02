@@ -86,7 +86,7 @@ exports.commands = {
 
 	lang: 'language',
 	language: function (arg, by, room, cmd) {
-		if (!this.isRanked('roomowner')) return false;
+		if (!this.isRanked('driver')) return false;
 		var tarRoom = room;
 		var targetObj = Tools.getTargetRoom(arg);
 		var textHelper = '';

@@ -217,7 +217,7 @@ exports.commands = {
 
 	ladderstop: 'ladderstart',
 	ladderstart: function (arg, by, room, cmd) {
-		if (!this.isRanked(Tools.getGroup('admin'))) return false;
+		if (!this.isRanked(Tools.getGroup('voice'))) return false;
 		if (cmd === 'ladderstop') {
 			if (Features['battle'].LadderManager.stop()) this.reply(this.trad('stop'));
 			return;
@@ -274,7 +274,7 @@ exports.commands = {
 	botteams: 'team',
 	teams: 'team',
 	team: function (arg, by, room, cmd) {
-		if (!this.isRanked(Tools.getGroup('admin'))) return false;
+		if (!this.isRanked(Tools.getGroup('voice'))) return false;
 		if (!arg) return this.reply(this.trad('u1') + ': ' + this.cmdToken + cmd + ' ' + this.trad('u2'));
 		arg = arg.split(',');
 		var opt = toId(arg[0]);
