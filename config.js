@@ -356,9 +356,6 @@ exports.groupChatTryJoinInterval = 60 * 1000;
 exports.groupchats['groupchat-ecuacion-test'] = {
 	toJoin: ['/join groupchat-ecuacion-test'],
 	onJoin: ['Hi guys!'],
-	onLeave: [],
-	roomAuth: {
-		'+': [/^.*$/]
-	}
+	onLeave: []
 };
 */
