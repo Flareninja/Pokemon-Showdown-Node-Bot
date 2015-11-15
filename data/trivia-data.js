@@ -126,4 +126,17 @@ exports.questions = [
         {q: "What ability raises Attack by 2 if one of its stats is lowered?", a: "Defiant"},
         {q: "Most psuedo-legendaries are non-legendaries with what BST?", a: "600"},
         {q: "What is the only legendary that can be used to make an egg?", a: "Manaphy"},
+        {q: "What is the only move that has a 70% chance to raise its user's Special Attack?", a: "Charge Beam"},
+        {q: "In which region would you receive a PokéGear?", a: "Johto"},
+        {q: "What was the first region where Pokemon Contests were introduced?", a: "Hoenn"},
+        {q: "What ability changes the type of all of a Pokemon's moves to Normal?", a: "Normalize"},
+        {q: "What ability heals a poisoned or badly poisoned Pokemon instead of dealing damage?", a: "Poison Heal"},
+        {q: "Which item only affects a Farfetch'd?", a: "Stick"},
+        {q: "What Pokemon's mega form has the ability Prankster?", a: "Banette"},
+        {q: "What Pokemon's mega form has the ability Filter?", a: "Aggron"},
+        {q: "What Pokemon gains (not replaces) the Fairy type when it Mega Evolves?", a: "Audino"},
+        {q: "Pokemon with highest HP stat", a: "Blissey"},
+        {q: "Pokemon with highest HP stat", a: "Blissey"},
+        {q: "Pokemon with highest HP stat", a: "Blissey"},
+        {q: "Pokemon with highest HP stat", a: "Blissey"},v{q: "Pokemon with highest HP stat", a: "Blissey"},v
 ];
