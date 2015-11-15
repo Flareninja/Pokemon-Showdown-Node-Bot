@@ -44,5 +44,11 @@ exports.questions = [
 	{q: "Most legendary pokemon have this ability, which doubles the amount of PP opponents use up when attacking.", a: "Pressure"},
 	{q: "Pokemon with highest HP stat", a: "Blissey"},
 	{q: "Pokemon with highest HP stat", a: "Blissey"},
+	{q: "Pokemon with highest HP stat", a: "Blissey"},
+	{q: "Pokemon with highest HP stat", a: "Blissey"},
+	{q: "Pokemon with highest HP stat", a: "Blissey"},
+	{q: "Pokemon with highest HP stat", a: "Blissey"},
+	{q: "Pokemon with highest HP stat", a: "Blissey"},
+	{q: "Pokemon with highest HP stat", a: "Blissey"},v{q: "Pokemon with highest HP stat", a: "Blissey"},
 	
 ];
