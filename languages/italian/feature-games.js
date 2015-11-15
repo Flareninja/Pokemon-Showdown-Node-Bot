@@ -92,7 +92,7 @@
 		trivia: {
 			'and': 'e',
 			'start': 'È stato creato un nuovo **Trivia**!',
-			'maxgames1': 'Ci saranno 5',
+			'maxgames1': 'Ci saranno',
 			'maxgames2': 'domande',
 			'maxpoints1': 'Se qualcuno ottiene',
 			'maxpoints2': 'punti, lui / lei vince',
