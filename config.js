@@ -7,7 +7,7 @@
 *
 * NOTE: Do NOT use "[server].psim.us", that is the client url
 * If you don't know what are the server, port or serverid values
-* run 'node serverconfig.js' to get them
+* run 'node getserver.js' to get them
 *
 */
 
@@ -71,8 +71,19 @@ exports.initCmds = ['|/avatar 120']; // Other commands (avatar, blockchallenges,
 */
 
 exports.exceptions = {
-	//userid: 'rank' or userid: true for full access
+	// 'userid': true
 };
+
+/*
+* 'userid': 'rank' or 'userid': true for full access
+* Example:
+
+exports.exceptions = {
+	'ecuacion': true,
+	'excepted': true
+};
+
+*/
 
 exports.ranks = ['+', '\u2605', '%', '@', '#', '&', '~'];
 
@@ -287,6 +298,17 @@ exports.tourDefault = {
 	autodq: 1.5,
 	scoutProtect: false
 };
+
+exports.leaderboards = {};
+
+/* Leaderboard example:
+exports.leaderboards['tournaments'] = {
+	winnerPoints: 5,
+	finalistPoints: 3,
+	semiFinalistPoints: 1,
+	battlePoints: 0
+};
+*/
 
 /*
 * Youtube
