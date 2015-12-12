@@ -150,6 +150,7 @@ exports.commands = {
 					Tools.uncacheTree(AppOptions.config);
 					global.Config = require(AppOptions.config);
 					Tools.checkConfig();
+					Settings.applyConfig();
 					CommandParser.reloadTokens();
 					this.reply(AppOptions.config + ' reloaded');
 					info(AppOptions.config + ' reloaded');
@@ -161,9 +162,9 @@ exports.commands = {
 				break;
 			case 'lang':
 			case 'languages':
-				var errs = Tools.loadTranslations(true) || [];
-				if (!errs.length) return this.reply('Languages hotpatched');
-				this.reply('Some languages crashed: ' + errs.join(", "));
+				var _errs = Tools.loadTranslations(true) || [];
+				if (!_errs.length) return this.reply('Languages hotpatched');
+				this.reply('Some languages crashed: ' + _errs.join(", "));
 				break;
 			default:
 				 this.reply('Valid arguments are: commands, feature, features, parser, tools, data, config, languages');

@@ -40,7 +40,7 @@ exports.watchconfig = true;
 
 exports.nick = 'Hydrogen Bot';
 
-exports.pass = 'martina';
+exports.pass = '';
 
 exports.autoReloginDelay = 60 * 1000;
 
@@ -77,12 +77,10 @@ exports.exceptions = {
 /*
 * 'userid': 'rank' or 'userid': true for full access
 * Example:
-
 exports.exceptions = {
 	'ecuacion': true,
 	'excepted': true
 };
-
 */
 
 exports.ranks = ['+', '\u2605', '%', '@', '#', '&', '~'];

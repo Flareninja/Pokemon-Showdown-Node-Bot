@@ -34,7 +34,7 @@ Keep `exports.watchconfig = true;` if you want `config.js` to be automatically r
 Login Deatails
 ------------
 
-Choose Bot's nickname and, if it is registered, specify the password. If you do not specify a nickname or the password is wrong, the bot will log in a randon username starded by `bot`
+Choose Bot's nickname and, if it is registered, specify the password. If you do not specify a nickname or the password is wrong, the bot will log in a random username started by `bot`
 
 Example:
 ```js
@@ -151,7 +151,9 @@ Battles (Optional)
 
 `exports.aceptAll` if true, the bot will acept all battle, without limits. It is not recommended, keep it to false, so you can specify max number of battles at the same time in `exports.maxBattles`.
 
-Specify in `exports.winmsg` all possible phrases for saying when bot wins, same with `exports.losemsg` but when bot loses. You can also specify other messages in `exports.battleMessages`.
+Specify in `exports.winmsg` all possible phrases for saying when bot wins, same with `exports.losemsg` but when bot loses, the same with `exports.initBattleMsg` but when the bot joins the battle. You can also specify other messages in `exports.battleMessages`.
+
+Set `exports.abandonedBattleAutojoin = true;` if you want to store battle ids in a JSON file to rejoin them in case of crash or forced restart.
 
 Configure the ladder feature with `exports.ladderCheckInterval` (the time to check for battles) and `exports.ladderNumberOfBattles` (Max number of ladder battles at the same time when you use `ladderstart` command).
 
@@ -231,3 +233,22 @@ exports.autoInvite = [
 ];
 ```
 In this example, in a server there is a private room with modjoin called `Admins Room` where all admins are room owners. With that feature if the bot is in both rooms, when an admin join lobby, it is automatically invited to Admins Room.
+
+GoupChats (Optional)
+------------
+
+You can use this feature to set events (arrays of commands to be sent on certain circunstances). For example:
+
+```js
+exports.groupchats['groupchat-ecuacion-test'] = {
+	toJoin: ['/join groupchat-ecuacion-test'],
+	onJoin: ['Hi guys!'],
+	onLeave: []
+};
+```
+
+**toJoin:** This is sent every 60 seconds if the bot is not in the room. You can use it to create a groupchat with `/makegroupchat` or joining an existing one after it expires.
+
+**onJoin:** This is sent when the bot joins the room. For example for setting the modchat, roomintro, etc or just a greeting.
+
+**toJoin:** This is sent when the bot leaves the room. For example for recreating the groupchat after it expires.
