@@ -40,7 +40,7 @@ exports.watchconfig = true;
 
 exports.nick = 'Hydrogen Bot';
 
-exports.pass = 'martina';
+exports.pass = '';
 
 exports.autoReloginDelay = 60 * 1000;
 
